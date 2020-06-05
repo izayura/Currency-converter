@@ -5,7 +5,7 @@
 - [Project description](#project-description)
 - [User definition](#user-definition)
 - [User stories](#user-stories)
-- [Prototype](#prototype)
+- [Prototype low fidelity](#prototype-low-fidelity)
 - [Documentation](#documentation)
 - [Additional features](#Additional-features)
 
@@ -37,7 +37,7 @@ Create a web app that consume the free currency API provided (https://exchangera
 - Flexbox, Bootstrap or any other CSS tool (Correct use of the tool)
 
 ## User definition
-The user need a web app where he can enter some MXN value and convert it in another currencies.
+The user needs a web app where enters some MXN value and convert it in 3 different currencies: USD, EUR and CAD.
 
 ## User stories
 #### User Story 1
@@ -54,18 +54,23 @@ The user can enter to the interface and edit an input to insert a MXN value.
 The user can see 3 different currencies converted from the MXN value when the button is clicked
 
 **DoD**
-- Function to convert MXN in different currencies
+- Function to convert MXN in USD
+- Function to convert MXN in EUR
+- Function to convert MXN in CAD
 - Currencies will be displayed in Interface when button is clicked
 
 #### User Story 3
-The user can see automatically the different currencies when he edits the input
+The user can see automatically the different currencies when edits the input
 
 **DoD**
 - Function to show automatically the currencies converted
-- Delete User Story button
+- Delete elements not required
 
-## Prototype
+## Prototype low fidelity
+![Prototype Low Fidelity](https://i.ibb.co/KWLZT9m/IMG-20200605-161839.jpg)
 
 ## Documentation
 
 ## Additional features
+#### Kanban Board
+![Kanban Board](https://i.ibb.co/qnWT8VY/IMG-20200605-160906.jpg)
