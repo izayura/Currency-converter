@@ -1,0 +1,31 @@
+header{
+    background-color:orange;
+}
+body{
+    background-color: powderblue;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#MXNCurrency{
+    background-color:green;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#USDCurrency{
+    background-color:blue;
+    width: 30%;
+    float: left;
+}
+#EURCurrency{
+    background-color: yellow;
+    width: 30%;
+    float: left;
+}
+#CADCurrency{
+    background-color: red;
+    width: 30%;
+    float: left;
+}
