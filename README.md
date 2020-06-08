@@ -70,6 +70,15 @@ The user can see automatically the different currencies when edits the input
 ![Prototype Low Fidelity](https://i.ibb.co/KWLZT9m/IMG-20200605-161839.jpg)
 
 ## Documentation
+#### June 8
+During this first day, the priority was to explore the API that is used on the project and start manipulating its data to show what I need.
+
+I added some changes to the HTML structure to get and display the data I require on the project.
+
+Following the user stories, I added a button with the functionality to send the MXN currency written in the input and display the USD, EUR and CAD values in the interface. The same function works to clean the input.
+
+In the next iteration I plan to use Bootstrap to add the web design and visualize in a better way the results before I start working in User Story 3.
+
 
 ## Additional features
 #### Kanban Board
