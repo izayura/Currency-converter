@@ -1,4 +1,4 @@
-doingFetch = () => {
+doFetch = () => {
 	fetch('https://api.exchangeratesapi.io/latest?base=MXN')
 		.then((response) => {
 			if (response.status !== 200) {
@@ -23,9 +23,4 @@ doingFetch = () => {
 		.catch((error) => {
 			console.log('Fetch Error :-S', error);
 		});
-};
-
-sendCurrency = () => {
-	doingFetch();
-	console.log('click');
 };
