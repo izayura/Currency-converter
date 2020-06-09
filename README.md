@@ -66,6 +66,14 @@ The user can see automatically the different currencies when edits the input
 - Function to show automatically the currencies converted
 - Delete elements not required
 
+#### User Story 4
+The user needs an interface with a web design that is pleasing to the eye and that is displayed correctly on different devices.
+
+**DoD**
+- Add different values using the Grid System to make design responsive.
+- Use the tools offered by Bootstrap to make a better design
+- Add flags alluding to currencies
+
 ## Prototype low fidelity
 ![Prototype Low Fidelity](https://i.ibb.co/KWLZT9m/IMG-20200605-161839.jpg)
 
@@ -79,6 +87,17 @@ Following the user stories, I added a button with the functionality to send the 
 
 In the next iteration I plan to use Bootstrap to add the web design and visualize in a better way the results before I start working in User Story 3.
 
+#### June 9
+I have never worked with Bootstrap so this was the perfect opportunity to take a look at the documentation and start using it.
+
+I added a simple Grid System to make my interface responsive, and some other styles to visualize what I'm doing.
+
+I also finished the User Story 3 adding an oninput with function doFetch() inside the input "MXN" to display automatically the currencies converted, so the button used in User Stories 1 and 2 was deleted.
+
+Inside doFetch() I used toFixed() to round the displayed currencies to decimal places.
+
+In the next iteration I plan to continue working on web design to 
+bring it closer to what I proposed in my prototype, so I'm adding a new User Story focused only on web design.
 
 ## Additional features
 #### Kanban Board
