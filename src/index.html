@@ -4,31 +4,58 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Currency Converter HCL code challenge</title>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            .heightCurrency { height: 100px;}
+        </style>
     </head>
     <body>
-        <header id="projectHeader">
-            Currency Converter
-        </header>
+        <div class="container-fluid bg-success text-center py-3">
+            <div class="container"></div>
+                <header id="projectHeader">
+                    <h1>Currency Converter</h1>
+                </header>
+        </div>
+        </div>
+    <div class="container bg-success text-center">
         <main>
-            <section id="MXNCurrency">
-                MXN Currency
-                <input id="MXN" placeholder="Write rate in MXN"></input>
-                <button id="sendCurrency" onclick="doFetch()">Send MXN Currency</button>
-            </section>
-            <section id="USDCurrency">
-                USD Currency
-                <p id="USD"></p>
-            </section>
-            <section id="EURCurrency">
-                EUR Currency
-                <p id="EUR"></p>
-            </section>
-            <section id="CADCurrency">
-                CAD Currency
-                <p id="CAD"></p>
-            </section>
-        </main>
-        <script src="app.js"></script>
+            <div class="row bg-primary py-3">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <section id="MXNCurrency">
+                        <h1>MXN Currency</h1>
+                        <input id="MXN" placeholder="Write rate in MXN" oninput="doFetch()"></input>
+                    </section>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="container">
+                <div class="row py-3 align-items-center justify-content-around">
+                    <div class="col-sm-12 col-md-3 py-2 bg-primary heightCurrency">
+                        <section id="USDCurrency">
+                            <h4>USD Currency</h4>
+                            <p id="USD"></p>
+                        </section>
+                    </div>
+                    <div class="col-sm-12 col-md-3 py-2 bg-primary heightCurrency">
+                        <section id="EURCurrency">
+                            <h4>EUR Currency</h4>
+                            <p id="EUR"></p>
+                        </section>
+                    </div>
+                    <div class="col-sm-12 col-md-3 py-2 bg-primary heightCurrency">
+                        <section id="CADCurrency">
+                            <h4>CAD Currency</h4>
+                            <p id="CAD"></p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main> 
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
+    <script src="app.js"></script>
     </body>
 </html>
