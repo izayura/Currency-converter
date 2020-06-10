@@ -99,6 +99,22 @@ Inside doFetch() I used toFixed() to round the displayed currencies to decimal p
 In the next iteration I plan to continue working on web design to 
 bring it closer to what I proposed in my prototype, so I'm adding a new User Story focused only on web design.
 
+#### June 10
+This day I worked on improve the web design and make some adjustments to the HTML structure.
+
+The web design is responsive and with simple and solid colors. I added .png images to show the currencies flags and a collapsable header. The file style.css was unnecessary so I deleted it.
+
+I will ask for feedback to add some elements and improvements in the design, but at the moment I am satisfied with the result.
+
+The last iteration before submitting the project will be entirely to improve details according to the feedback obtained.
+
 ## Additional features
 #### Kanban Board
-![Kanban Board](https://i.ibb.co/qnWT8VY/IMG-20200605-160906.jpg)
+##### After June 5
+![Kanban Board after June 5](https://i.ibb.co/qnWT8VY/IMG-20200605-160906.jpg)
+##### After June 8
+![Kanban Board after June 8](https://i.ibb.co/JCXg0RJ/IMG-20200610-180613.jpg)
+##### After June 9
+![Kanban Board after June 9](https://i.ibb.co/M9SMq18/IMG-20200610-180236.jpg)
+##### After June 10
+![Kanban Board after June 10](https://i.ibb.co/QkGcsX4/IMG-20200610-175749.jpg)
