@@ -5,7 +5,7 @@
 - [Project description](#project-description)
 - [User definition](#user-definition)
 - [User stories](#user-stories)
-- [Prototype low fidelity](#prototype-low-fidelity)
+- [Low fidelity Prototype](#low-fidelity-prototype)
 - [Documentation](#documentation)
 - [Additional features](#Additional-features)
 
@@ -15,7 +15,7 @@ The time allotted for this project was one week from the date of the first commi
 
 ## Project description
 #### Main description: 
-Create a web app that consume the free currency API provided (https://exchangeratesapi.io/) to convert MXN currency to dollar, euro and Canadian dollar (CAD).
+Create a web app that consume the free currency API provided (https://exchangeratesapi.io/) to convert MXN currency to dollar, euro and Canadian dollar (CAD). 
 
 #### MVP (Minimum Viable Product)
 - The user can edit an entry to set MXN value
@@ -74,12 +74,21 @@ The user needs an interface with a web design that is pleasing to the eye and th
 - Use the tools offered by Bootstrap to make a better design
 - Add flags alluding to currencies
 
-## Prototype low fidelity
-![Prototype Low Fidelity](https://i.ibb.co/KWLZT9m/IMG-20200605-161839.jpg)
+## Low fidelity Prototype
+![Low Fidelity Prototype](https://i.ibb.co/KWLZT9m/IMG-20200605-161839.jpg)
 
 ## Documentation
+#### June 5
+Before starting to write code, I had to do some planning.
+
+I created the repository in GitHub and then I wrote the README to define Introduction, Project Description, User Definition and the User Stories with theirs DoD.
+
+To help with the work flow I made a Kanban Board next to my workplace and drew a low fidelity Prototype to get an idea of how to arrange the elements in the project.
+
 #### June 8
-During this first day, the priority was to explore the API that is used on the project and start manipulating its data to show what I need.
+During this day, the priority was to explore the API that is used on the project and start manipulating its data to show what I need.
+
+Due to the API used, currencies are automatically updated according to the exchange rate without the need to update the code.
 
 I added some changes to the HTML structure to get and display the data I require on the project.
 
@@ -102,19 +111,24 @@ bring it closer to what I proposed in my prototype, so I'm adding a new User Sto
 #### June 10
 This day I worked on improve the web design and make some adjustments to the HTML structure.
 
-The web design is responsive and with simple and solid colors. I added .png images to show the currencies flags and a collapsable header. The file style.css was unnecessary so I deleted it.
+The web design is responsive and with simple and solid colors. I added a collapsable header to describe the web app. I also added some .png images to show the currencies flags. The file style.css was unnecessary so I deleted it. Finally, I deployed the project using GitHub Pages.
 
 I will ask for feedback to add some elements and improvements in the design, but at the moment I am satisfied with the result.
 
 The last iteration before submitting the project will be entirely to improve details according to the feedback obtained.
 
+#### June 11
+Yesterday I showed the web app to some friends and the feedback was good, only I had to clarify some points obvious for me and I had to update the README to let clear all the elements in the project.
+
+Also I added a footer to link the web app with the repository on GitHub.
+
 ## Additional features
 #### Kanban Board
 ##### After June 5
-![Kanban Board after June 5](https://i.ibb.co/qnWT8VY/IMG-20200605-160906.jpg)
+![Kanban Board after June 5](https://i.ibb.co/Rgt4vMY/IMG-20200605-160906.jpg)
 ##### After June 8
-![Kanban Board after June 8](https://i.ibb.co/JCXg0RJ/IMG-20200610-180613.jpg)
+![Kanban Board after June 8](https://i.ibb.co/1d3Vhf0/IMG-20200610-180613.jpg)
 ##### After June 9
-![Kanban Board after June 9](https://i.ibb.co/M9SMq18/IMG-20200610-180236.jpg)
+![Kanban Board after June 9](https://i.ibb.co/19QBkjs/IMG-20200610-180236.jpg)
 ##### After June 10
-![Kanban Board after June 10](https://i.ibb.co/QkGcsX4/IMG-20200610-175749.jpg)
+![Kanban Board after June 10](https://i.ibb.co/vxXHdcS/IMG-20200610-175749.jpg)
