@@ -1,4 +1,4 @@
-doFetch = () => {
+convertCurrency = () => {
 	fetch('https://api.exchangeratesapi.io/latest?base=MXN')
 		.then((response) => {
 			if (response.status !== 200) {
@@ -8,6 +8,8 @@ doFetch = () => {
 			response.json().then((data) => {
 				let MxnRate = document.getElementById('MXN');
 				let MxnCurrency =MxnRate.value * data.rates.MXN;
+				let alert = document.getElementById('alert');
+				alert.innerHTML=MxnRate.validationMessage;
 				let UsdRate = document.getElementById('USD');
 				UsdRate.innerHTML = '$ ' + (MxnCurrency * data.rates.USD).toFixed(2);
 				let EurRate = document.getElementById('EUR');
