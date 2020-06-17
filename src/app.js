@@ -1,4 +1,4 @@
-convertCurrency = () => {
+/*convertCurrency = () => {
 	fetch('https://api.exchangeratesapi.io/latest?base=MXN')
 		.then((response) => {
 			if (response.status !== 200) {
@@ -21,4 +21,20 @@ convertCurrency = () => {
 		.catch((error) => {
 			console.log('Fetch Error :-S', error);
 		});
-};
+}; */
+
+class Rate{
+	constructor(name, id, symbol){
+		this.name=name;
+		this.id=id;
+		this.symbol=symbol;
+	}
+}
+
+const UsdRate=new Rate("USD","USD","$");
+const EurRate=new Rate("EUR", "EUR", "€");
+const CadRate=new Rate("CAD", "CAD", "$");
+
+console.log(UsdRate.name);
+console.log(EurRate.id);
+console.log(CadRate.symbol);
