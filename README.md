@@ -11,7 +11,7 @@
 
 ## Introduction
 This project is perform by **Gloria Ramirez Robles** as a code challenge to evaluate her knowledge and way of working with Javascript.
-The time allotted for this project was one week from the date of the first commit to this repository.
+The time allotted for this project was one week from the date of the first commit to this repository. After this time, iterations were made to change some issues.
 
 ## Project description
 #### Main description: 
@@ -143,6 +143,17 @@ I've changed my class design as I go along and I notice a single class is doing 
 Another problem I have is getting the data inside the JSON of my API, since I only get to read it as a String and it doesn't bring the data I require. If I write directly the code required it works, but when I write the code dynamically with the object's attributes it doesn't. 
 
 I will continue to simplify the code to see if it works, but anyway I'm already researching about Axios, another way to manipulate the API in my project.
+
+#### June 19
+I could resolve my problem to get the data inside my API, so I didn't have to switch to Axios anymore. Also I modified how I was creating my DOM call and the result in displayCurrencies() (before showRate() ) finally showed correctly.
+
+To make the code more optimal and allow to add more objects without the need to write too much new code, I created an array(arrayRates) where I store my 3 objects. Then I created 2 functions
+- createContainers() that is used for iterate each element in arrayRates and fires createContainer() from class CreateRateContainer. It fires only when the page is loaded for the first time, so I assigned it inside onload in the body tag(index.html)
+- updateCurrenciesDisplayed() that is used for iterate each element in arrayRates and fires displayCurrencies() from class DisplayCurrencies(before DisplayRate). It fires when the input value changed and was assigned inside oninput on the input tag(index.html)
+
+I merged feature_OOP_logic branch with develop branch and finally merge develop with master. I read about using a release branch to merge the code from develop to master, but I considered that for use release branches correctly, with versions numbers, I had to use them from the beginning of the project, so I omitted their use.
+
+Now the project is open to add new currencies from another countries(as long as they are inside the API). I would only have to add a new object with attributes name and symbol, an image of its flag inside img/ folder(named with the same name attribute declared in the object) and finally add this object in arrayRates.
 
 ## Additional features
 #### Kanban Board
