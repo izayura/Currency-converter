@@ -5,12 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Currency Converter HCL code challenge</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            .heightCurrency { height: 300px;}
-            #USD, #EUR, #CAD { font-weight: bolder; }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body onload="createContainers()">
         <header id="projectHeader" class="container-fluid bg-dark text-white text-center py-3">
             <div class="container">
                 <a href="#headerDescription" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="headerDescription">
@@ -23,38 +20,25 @@
         </header>
         <main class="container-fluid bg-secondary text-center h-auto position-sticky">
             <section class="container py-3">
-                <div class="row bg-success py-3  border justify-content-around">
+                <div class="row bg-success py-3 border justify-content-around">
                     <section id="MXNCurrency" class="col-10">
-                        <div class="row align-items-center justify-content-around heightCurrency">
+                        <div class="row align-items-end justify-content-around">
                             <section class="col-sm-12 col-md-3">
                                 <img src="img/MX.png" alt="MXN">
                                 <h2>MXN Currency</h2>
                             </section>
                             <section class="col-sm-12 col-md-8">
                                 <p class="h4">Write the currency value you want to convert</p>
-                                <input id="MXN" placeholder="$" oninput="doFetch()" class="my-3" />
+                                <input id="MXN" placeholder="$" oninput="updateCurrenciesDisplayed()" class="my-3" type="number" step="0.01"/>
+                                <p id="alert"></p>
                             </section>
                         </div>
                     </section>
                 </div>
             </section>
             <section class="container">
-                <div class="row py-3 justify-content-around">
-                    <section id="USDCurrency" class="col-sm-12 col-md-3 py-2 my-2 bg-primary border heightCurrency">
-                        <img src="img/USA.png" alt="USD">
-                        <h4>USD Currency</h4>
-                        <p id="USD" class="h3"></p>
-                    </section>
-                    <section id="EURCurrency" class="col-sm-12 col-md-3 py-2 my-2 bg-primary border heightCurrency">
-                        <img src="img/EU.png" alt="EUR">
-                        <h4>EUR Currency</h4>
-                        <p id="EUR" class="h3"></p>
-                    </section>
-                    <section id="CADCurrency" class="col-sm-12 col-md-3 py-2 my-2 bg-primary border heightCurrency">
-                        <img src="img/CA.png" alt="CAD">
-                        <h4>CAD Currency</h4>
-                        <p id="CAD" class="h3"></p>
-                    </section>
+                <div class="row py-3 justify-content-around" id="containerRates">
+                    <!--Here is where the rate containers are created-->
                 </div>
             </section>
         </main>

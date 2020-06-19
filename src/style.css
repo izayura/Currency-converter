@@ -1,0 +1,22 @@
+@media only screen (max-width:768px) {    
+    #MXNCurrency {
+        height: 400px;
+    }
+    .heightCurrency { 
+        height: 200px;
+    }
+}
+@media (min-width:768px) and (max-width:1200px){
+    #MXNCurrency {
+        height: 250px;
+    }
+    .heightCurrency { 
+        height: 300px;
+    }
+}
+#USD, #EUR, #CAD { 
+    font-weight: bolder; 
+}
+#alert{
+    color: red;
+}
