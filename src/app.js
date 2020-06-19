@@ -30,7 +30,7 @@ class DisplayCurrency extends CreateRateContainer{
 		return fetch('https://api.exchangeratesapi.io/latest?base=MXN')
 		.then(response=>response.json())
 		.then((data) => {
-			let MxnRate = document                                              .getElementById('MXN');
+			let MxnRate = document.getElementById('MXN');
 			let MxnCurrency =MxnRate.value * data.rates.MXN;
 			let alert = document.getElementById('alert');
 			alert.innerHTML=MxnRate.validationMessage;
