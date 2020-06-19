@@ -31,13 +31,16 @@
                                 <p class="h4">Write the currency value you want to convert</p>
                                 <input id="MXN" placeholder="$" oninput="CadRate.showRate()" class="my-3" type="number" step="0.01"/>
                                 <p id="alert"></p>
+                                <button onclick="EurRate.createContainer()">CLICK</button>
                             </section>
                         </div>
                     </section>
                 </div>
             </section>
             <section class="container">
-                <div class="row py-3 justify-content-around">
+                <div class="row py-3 justify-content-around" id="containerRates">
+                    <p id="testing">TEST</p>
+                    <!--
                     <section id="USDCurrency" class="col-sm-12 col-md-3 py-2 my-2 bg-primary border heightCurrency">
                         <img src="img/USA.png" alt="USD">
                         <h4>USD Currency</h4>
@@ -53,6 +56,7 @@
                         <h4>CAD Currency</h4>
                         <p id="CAD" class="h3"></p>
                     </section>
+                    -->
                 </div>
             </section>
         </main>
