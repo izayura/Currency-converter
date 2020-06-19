@@ -7,21 +7,23 @@ class Rate{
 }
 
 class CreateRateContainer extends Rate{
-	constructor(name, id){
-		super(name, id);
+	constructor(name, id, symbol){
+		super(name, id, symbol);
 	}
 
 		createContainer(){
-			var para = document.createElement("p");
-            var node = document.createTextNode(`${this.name}`);
-			para.appendChild(node);
-
-			var element = document.getElementById("containerRates");
-			var child = document.getElementById("testing");
-			element.insertBefore(para,child);
+			let currencyContainer=document.getElementById("containerRates");
+			currencyContainer.innerHTML+=
+			`
+			<section class="col-sm-12 col-md-3 py-2 my-2 bg-primary border heightCurrency">
+			<img src="img/${this.id}.png" alt="${this.name}">
+            <h4>${this.name} Currency</h4>
+            <p id="${this.name}" class="h3">${this.name}</p>
+			</section>
+			`
 		}
 }
-class DisplayRate extends Rate{
+class DisplayRate extends CreateRateContainer{
 	constructor(name, id, symbol){
 		super(name, id, symbol);
 	}
@@ -61,11 +63,14 @@ class DisplayRate extends Rate{
 }
 
 
-const UsdRate=new Rate("USD","USD","$");
-const EurRate=new CreateRateContainer("EUR", "EUR", "€");
+const UsdRate=new DisplayRate("USD","USD","$");
+const EurRate=new DisplayRate("EUR", "EUR", "€");
 const CadRate=new DisplayRate("CAD", "CAD", "$");
 
 console.log(UsdRate.name);
 console.log(EurRate.id);
 console.log(CadRate.symbol);
-console.log(CadRate.showRate());
+console.log(EurRate.showRate());
+EurRate.createContainer();
+UsdRate.createContainer();
+CadRate.createContainer();
