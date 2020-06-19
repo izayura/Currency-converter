@@ -122,6 +122,28 @@ Yesterday I showed the web app to some friends and the feedback was good, only I
 
 Also I added a footer to link the web app with the repository on GitHub.
 
+#### June 17-18
+As part of the feedback received after finishing the challenge, the next opportunity areas were commented:
+
+- Git commits too bigger (Needs to be commits whit specific content and specific description)
+- Git flow (Learn about branches and for what they are used like master, staging and QA branches)
+- Little beginner errors like styling directly in HTML instead of a separate file, text inputs instead of numbers, not fully descriptive function name
+- Object orientated programming
+
+And I was asked to enhance this project implementing these points.
+
+I did my research and the Git Branches were implemented from that moment on the project, creating a develop Branch from were I created another branches to make the required changes(feature_branch and feature_OOP_logic).  Until the changes necessaries are made and everything works correctly, these feature branches will merge with develop branch.
+
+I fixed the little beginner errors creating style.css to separate certain code from index.html, and changed some attributes of my input tag. Also I added an alert to show an error message if the input value is not write correctly.
+
+Implementing Object-Oriented Programming has been the most difficult part, since I thought it only belonged to Java and other object-oriented languages, but as I started to investigate, read about SOLID and doing code exercises I realized that this way I can create more optimal and scalable code.
+
+I've changed my class design as I go along and I notice a single class is doing too many tasks, so in this moment I have 3 clases: Rate, CreateRateContainer and DisplayRate.
+
+Another problem I have is getting the data inside the JSON of my API, since I only get to read it as a String and it doesn't bring the data I require. If I write directly the code required it works, but when I write the code dynamically with the object's attributes it doesn't. 
+
+I will continue to simplify the code to see if it works, but anyway I'm already researching about Axios, another way to manipulate the API in my project.
+
 ## Additional features
 #### Kanban Board
 ##### After June 5
